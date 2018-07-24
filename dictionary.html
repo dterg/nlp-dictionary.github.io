@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NLP Terminology Dictionary</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/custom.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./libs/fontawesome-free-5.1.1-web/css/all.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>NLP Terminology Dictionary</h2>
+  <p></p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped table-hover">
+<thead><tr><th title="Field #1">Term</th>
+<th title="Field #2">Definition</th>
+<th title="Field #3">Publication(s)</th>
+</tr></thead>
+<tbody id="myTable"><tr>
+<td>Ablation studies</td>
+<td>Systematic removal of input features or architectural features to identify importance through impact on performance. E.g. if original input consists of 5 features, remove one feature at a time to determine its contribution. E.g. after training, remove/ablate nodes in the different layers of the neural network to determine which contributes most.</td>
+<td><a href="http://www.google.com"><i class="far fa-newspaper" title="publication title goes here"></i></a></td>
+</tr>
+<tr>
+<td>Abstractive summarization</td>
+<td>Generate summarizing text that is not explicitly used in the original text. Aims at generating coherent phrases through content abstraction.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Adverb</td>
+<td>Word or phrase that modifies meaning of an adjective, verb or other adverb, expressing manner, place, time or degree (e.g. gently, here, now, very). E.g. “She sang loudly” (loudly modifies the verb sang, indicating manner of singing). E.g. “We left it here” (indicating place for the verb left it). E.g. “I worked yesterday” (indicating time of working). E.g. “You often make mistakes” (“often modifies verb “make mistakes” indicating frequency)</td>
+<td> </td>
+</tr>
+<tr>
+<td>Adverbs</td>
+<td>Word/phrase that modifies meaning of an adjective, verb or other adverb expressing manner, time, place or degree (e.g. gently, here, now, very)</td>
+<td> </td>
+</tr>
+<tr>
+<td>Adversarial learning</td>
+<td>See Generative adversarial learning.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Affine transformation</td>
+<td>A linear mapping transformation that preserves points, straight lines, and planes. Parallel lines remain parallel after such transformation. e.g. translation, scaling, shear, and rotation.</td>
+<td>https://www.mathworks.com/discovery/affine-transformation.html</td>
+</tr>
+<tr>
+<td>Affix</td>
+<td>A morpheme (e.g. prefix, suffix) that is added to a word stem to form a new word. E.g. un-believable (prefix un- negates the meaning of believable), prepare-d (affix indicating past tense of the verb prepare)</td>
+<td> </td>
+</tr>
+<tr>
+<td>Anaphor</td>
+<td>A word in a text that refers back to previously stated text for its meaning. Interpretation therefore depends on the context. E.g. “Sally arrived, but nobody saw her” – “her” is an anaphor referring back to the antecedent Sally. Opposite of Cataphor.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Antecedent</td>
+<td>Expression that gives meaning to a pronoun. “Ava arrived late because traffic held her up”. “Her” (pronoun) refers to and takes its meaning from “Ava” so Ava is the antecedent of her (whereas “her” is the anaphor).</td>
+<td> </td>
+</tr>
+<tr>
+<td>Argument(ation) Mining</td>
+<td>Information extraction task to extract and identify argumentative structures from text. E.g. extracting arguments for and against a given topic from social media.</td>
+<td>IBM’s project debater</td>
+</tr>
+<tr>
+<td>Attention</td>
+<td>A weight vector that allows focusing on local or global features. Originally proposed in translation where instead of translating word for word, an attention vector provides context by indicating importance of some words over others in the translation of a sentence. During decoding, context vectors are computed for a given target word and a set of source words. Attention vector is computed given the context vector, target word and an attention function.</td>
+<td>https://arxiv.org/abs/1706.03762</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td>https://medium.com/syncedreview/a-brief-overview-of-attention-mechanism-13c578ba9129</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td>http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/</td>
+</tr>
+<tr>
+<td>Augmentative</td>
+<td>Morphological form of a word reinforcing the meaning of the original word (e.g. size). E.g. over- (in overlord and oversee), grand- (in grandmaster, grandparent), mega- (in megastore, megastar), super- (in supermarket, superstar, superpower). Opposite of diminutive.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Back-translation</td>
+<td>The process of translating back a document that had been translated from language X to language Y, back to language X. May be used to assess accuracy of translation.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Beam search</td>
+<td>Graph search greedy algorithm. Builds a search tree using breadth-first search. Used in machine translation to select the best translations while minimizing memory usage.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Biaffine transformation</td>
+<td>Extension of a bilinear transformation used in dependency parsing. A linear transformation of the head word representation is added to capture prior probability of a word taking any dependent.</td>
+<td>Deep learning in natural language processing</td>
+</tr>
+<tr>
+<td>Biaffine attention</td>
+<td> </td>
+<td>https://arxiv.org/pdf/1611.01734.pdf</td>
+</tr>
+<tr>
+<td>Bilingual lexicon induction</td>
+<td>Task of inducing word translations from monolingual corpora in two languages.</td>
+<td>https://www.mitpressjournals.org/doi/abs/10.1162/COLI_a_00284</td>
+</tr>
+<tr>
+<td>BLEU score</td>
+<td>Metric used in translation to evaluate performance. Ranges from 0 to 1, where 0 is the worst performance and 1 is a perfect match. Abbreviation for BiLingual Evaluation Understudy score.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Cloze test</td>
+<td>A task where words are chosen and placed for missing text in a body of text. Commonly referred to “fill in the blanks”. E.g. “We went to the ___ for a swim” [beach].</td>
+<td> </td>
+</tr>
+<tr>
+<td>Co-attention</td>
+<td>Two separate attention distributions used commonly in tasks using multiple data types/sources (multi-modal), such as Visual Question Answering.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Code-mixing</td>
+<td>Mixing of two or more languages in dialogue or speech. Mixing can be at sub-word level (e.g. prefixes). Commonly used interchangeably with code-switching.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Code-switching</td>
+<td>Mixing of two or more languages in dialogue or speech. E.g. “We had a gelato by the beach.” Commonly used interchangeably with code-mixing.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Coherence</td>
+<td>Required for organized and meaningful discourse. Provides links between potentially different parts of text to maintain meaning between and within sentences. E.g. Speaker A: “Why are you late?”; Speaker B: “I stayed up late last night”. We can infer that because Speaker B stayed up late last night, he woke up late. A full reply would have been: “I’m late because I stayed up late last night”. </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>Coherence can be achieved by syntactical features e.g. deictic, anaphoric and cataphoric elements, presuppositions and implications. Therefore, may rely a lot on the reader/listener’s knowledge due to assumptions (e.g. presuppositions).</td>
+<td> </td>
+</tr>
+<tr>
+<td>Collocations</td>
+<td>Co-occurrence of pairs of words with a frequency greater than chance e.g. “heavy drinker”, “strong tea”. There are six main types of collocations: adjective+noun, noun+noun, verb+noun, adverb+adjective, verbs+prepositional phrase, verb+adverb</td>
+<td> </td>
+</tr>
+<tr>
+<td>Corpus (plural: corpora)</td>
+<td>A collection of textual data. Used as training (and testing) data in NLP tasks. Annotated corpora provide labeling information to allow for supervised machine learning.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Constituency parsing</td>
+<td>Hierarchically splits text into sub-phrases (i.e. the constituents of the sentence). Compares to dependency parsing.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Conversational AI</td>
+<td>QA answering agents, task-oriented dialogue agents, and social bots</td>
+<td> </td>
+</tr>
+<tr>
+<td>Convolutional seq2seq</td>
+<td>Sequence-to-sequence model based on convolutional neural networks rather than recurrent neural networks. This allows for higher parallelization.</td>
+<td>https://arxiv.org/abs/1705.03122</td>
+</tr>
+<tr>
+<td>Coreference</td>
+<td>A pair (or more) of expressions/words where the latter (anaphor) refers to a previously mentioned term (antecedent). E.g. “John liked what he saw. He was amazed.” Here “he” is a reference to “John”.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Deep generative models</td>
+<td>Unsupervised neural network-based models that learn the distribution of some training data. Able to generate new samples from this learnt distribution. E.g. Variational Autoencoders (VAE) and Generative Adversarial Networks (GAN).</td>
+<td> </td>
+</tr>
+<tr>
+<td>Deixis / deictic</td>
+<td>Words whose meaning is not understood without additional context e.g. me, here. Words are deictic if their semantic meaning is fixed but their denotational meaning varies depending on time and/or place. Words which require contextual information to convey meaning e.g. pronouns – are deictic</td>
+<td> </td>
+</tr>
+<tr>
+<td>Denotation</td>
+<td>Literal or primary meaning of a word, in contrast to the feelings or ideas that the word suggests</td>
+<td> </td>
+</tr>
+<tr>
+<td>Dependency parsing</td>
+<td>Identifying the relationships between words. Generates a hierarchical tree structure where edges indicate relationship type e.g. for a given verb, what is its subject and object.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Dialogue</td>
+<td>Spoken conversation. Subset of discourse.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Dialogue agent / dialogue system</td>
+<td>A system that is aimed to have a coherent conversation, ultimately helping user achieve a task. Not restricted to spoken-dialogue but may also be text or graphics-based.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Dialogue State Tracking</td>
+<td>Dialog systems may be designed to aid a user in achieving a task. State tracking involves keeping track of whether the user’s goal have been met at every step of the dialog.</td>
+<td>https://ai.google/research/pubs/pub44018</td>
+</tr>
+<tr>
+<td>Dictionary Induction</td>
+<td>A dictionary provides the mapping between words in different languages. When such mapping is not complete or existent, such mapping can be indirectly inferred/induced. One such approach is pivot-based induction where a third language is used to bridge a language pair</td>
+<td> </td>
+</tr>
+<tr>
+<td>Diminutive</td>
+<td>Morphological form of a word to convey smallness of the object. E.g. “little” or “tiny” or adding the suffixes in Italian: casa à casetta à casettina to indicate size.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Discourse</td>
+<td>Written or spoken communication (see Dialogue)</td>
+<td> </td>
+</tr>
+<tr>
+<td>Discourse coherence</td>
+<td>See coherence and discourse</td>
+<td> </td>
+</tr>
+<tr>
+<td>Discourse representation structures</td>
+<td>Representations that capture hearer’s mental understanding of a discourse over time. Includes entities being discussed (discourse referents) and conditions representing information about the referents. E.g. “A farmer owns a donkey” can be represented as [x,y: farmer(x), donkey(y), owns(x,y)], where x and y are 2 referents and “farmer”, “donkey” and “owns” are three conditions. Representation structures are updated as the discourse proceeds.</td>
+<td>https://en.wikipedia.org/wiki/Discourse_representation_theory</td>
+</tr>
+<tr>
+<td>Discourse representation theory</td>
+<td>A framework for exploring meaning in a formal approach. Includes abstract mental representations (discourse representation structures) and handles meaning across sentence boundaries.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Discriminative Models</td>
+<td>In a discrimination/classification task, the aim is to predict to which class a sample belongs to. With supervision, a discriminative model learns features that distinguish between the different classes. This contrasts generative models.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Encoder-decoder</td>
+<td>A system coupling an encoder, which converts an input into a new representation, and a decoder which converts this new representation back to the original form. Approach used in generative models such as variational autoencoders (VAE).</td>
+<td> </td>
+</tr>
+<tr>
+<td>Entailment</td>
+<td>Drawing conclusions from a particular use of a word. Entailment phrases are relations between propositions and are always worded as “if A then B”, meaning if A is true, then B must also be true. E.g. if it’s a shoe, then its meant to be worn on a foot. Here the word shoe means “footwear” as a noun not an adjective. To judge whether an entailment is true, one can ask “could it ever be the case that B isn’t true when A is true”?. Strong knowledge of denotation of the word is required to recognize entailments</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          Entailment vs. presupposition: truth of what is presupposed is taken for granted in presupposition even if this is not true. In entailment does not allow for a lack of referent (whereas presupposition does)</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          Entailment vs. implicature: truth of A suggests truth of B but does not require it. Entailment does not allow for reinterpretations. E.g. The president was assassinated. The president is dead. If A is true, B MUST be true. “The president was assassinated” entails “the president is dead”. No alterations can be made to the truth A without changing the truth of B. In implicature, if A is true, B and/or C can be true. E.g. “Raj was late to the wedding after he crashed his car” implicates “Raj was late to the wedding because he crashed his car” but could also mean “A week after crashing his car, Raj was late to the wedding”. Neither B nor C MUST be true for A to be true.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Entailment graph</td>
+<td>Nodes represent language expressions and directed edges represent entailment between nodes.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Entity typing </td>
+<td>Given a sentence with an entity mention, predict set of free-form phrases that describe appropriate types for the target entity</td>
+<td> </td>
+</tr>
+<tr>
+<td>Extractive summarization</td>
+<td>A task which involves identifying and extracting text chunks from the original text that summarize the gist of the text.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Factor analysis</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>F1-score</td>
+<td>Harmonic mean of precision and recall calculated as 2*(precision+recall)/(precision+recall)</td>
+<td> </td>
+</tr>
+<tr>
+<td>Gaussian mixture models</td>
+<td>Distribution that represents the probability distribution of samples in a population that consists of subpopulations. Used to infer properties of the sub-populations given samples from the overall population.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Generative models</td>
+<td>Unlike discriminative algorithms, generative models predict features given a certain label. In doing so, they learn the distribution of a given dataset. e.g. Generative Adversarial Networks (GAN), Variational Autoencoders (VAEs), and PixelRNN.</td>
+<td>https://deeplearning4j.org/generative-adversarial-network</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td>https://towardsdatascience.com/deep-generative-models-25ab2821afd3</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Generative Adversarial Networks (GAN)</td>
+<td>A type of a generative model. Given a dataset, the aim is to convert noise samples into identical dataset samples, such that a classifier is not able to tell the difference. Once this is achieved, the generator model has learned the characteristics of the dataset. This therefore involves the joint training of a generator and a classifier – adversarial training.</td>
+<td>https://blog.openai.com/generative-models/</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td>https://arxiv.org/abs/1406.2661</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Gloss</td>
+<td>Annotation that provides the meaning to a word within a given text</td>
+<td> </td>
+</tr>
+<tr>
+<td>Graph LSTM</td>
+<td>Vanilla LSTMs are linear chains modeling context in a linear fashion. Graph LSTM model graph representations allowing to capture complex linguistic dependencies.</td>
+<td>https://www.cs.jhu.edu/~npeng/papers/TACL_17_RelationExtraction.pdf</td>
+</tr>
+<tr>
+<td>Grapheme</td>
+<td>Smallest text unit which may or may not carry meaning. E.g. alphabetic letters, digits, punctuation marks, individual symbols.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Grounding</td>
+<td>Defines what is meaning. A sequence of characters does not imply meaning unless the connection is made by a specific intention. E.g. Looking up a word in a dictionary for a language that you don’t understand will not provide insight into its meaning. Comparing an unknown word to another known one is referred to as “grounding”. This is mental grounding of meanings of words. In a dialog between two individuals, for such individuals to understand each other there needs to be a “common ground”, i.e. mutual beliefs or understandings.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Hinge Loss</td>
+<td>A convex non-differentiable loss function used in classifier training.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Homonymy</td>
+<td>Words which sound or are spelled alike but have different meanings. E.g. “bank” is ambiguous as it may mean: river bank, savings bank, etc.  </td>
+<td> </td>
+</tr>
+<tr>
+<td>Idiosyncrasy</td>
+<td>Property of words which cannot be derived by the rules of a language. Words can be idiosyncractic in various ways:</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          Semantically: by having unpredictable aspect to their meaning</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          Phonologically: by being an exception to phonological rule</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          Morphologically: by being an exception to a word formation rule</td>
+<td> </td>
+</tr>
+<tr>
+<td>Implicature</td>
+<td>Refers to what is suggested in an utterance even though it is not expressed nor strictly implied by the utterance. E.g. “Mary had a baby and got married” suggests Mary had the baby before the wedding, but the sentence would still be strictly true if Mary had her baby after she got married. If we add “not necessarily in that order” to the sentence, then implicatures is now cancelled even though the meaning of the original sentence is not altered. Therefore, implicature is additional implied meaning that may not be true that is resultant of word order. In implicature, a sentence may have multiple meanings (i.e. if A is true, B and/or C may be true) whereas in entailment if A occurs, B MUST be true.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Induction [e.g. inducing embeddings]</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Inductive learning</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Inductive transfer learning</td>
+<td>//LIMSEE, LRP, DeepLIFT, LIME</td>
+<td> </td>
+</tr>
+<tr>
+<td>Inflection</td>
+<td>Modification of a word to express grammatical function or attribute e.g. tense, mood, person, number etc. Words that are never subject to inflection are said to be invariant. E.g. “must” is invariant as it doesn’t take suffixes or changes form to signify a different grammatical category</td>
+<td> </td>
+</tr>
+<tr>
+<td>Intent Detection</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Interlocutors</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Knowledge Graph embeddings</td>
+<td>Represent knowledge graph entities and relations as vectors in a high-dimensional space</td>
+<td> </td>
+</tr>
+<tr>
+<td>Language grounding</td>
+<td>Unlike dicitonaries which define words in terms of other words, humans understand many basic words in terms of experiences and context. Due to ambiguity, presupposition, etc a common ground needs to be defined between speaker and the hearer to understand each other. Or between person querying in a search engine and the results returned. The need to achieve common ground means that the hearer must ground the speaker’s utterances, making it clear that the hearer has understood the speaker’s meaning and intention</td>
+<td> </td>
+</tr>
+<tr>
+<td>Language model</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Latent variable models</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Lattice LSTM</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Lexical</td>
+<td>Relating to words in a language/vocabulary [vs. grammar or construction]</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          lexical word: words referring to things not only grammatical meaning. lexical words are those that have independent meaning</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          lexical form: canonical form of a word which appears in dictionaries</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          lexical semantics: how and what words denote</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          lexical definition: meaning of the most common usage of a word</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>-          lexicon = dictionary = vocabulary</td>
+<td> </td>
+</tr>
+<tr>
+<td>Lexical semantics</td>
+<td>Word meanings and relations between them</td>
+<td> </td>
+</tr>
+<tr>
+<td>Logical semantics</td>
+<td>Sense, reference, presupposition, implication</td>
+<td> </td>
+</tr>
+<tr>
+<td>MedMentions</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Memory networks</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Mixture model</td>
+<td>Mixture model is a probabilistic model for representing presence of subpopulations within an overall population, without requiring to identify subpopulation to which data belongs to. Mixture model corresponds to the mixture distribution that represents the probability distriubtuioin of observations in the overall population. Mixture models are used to make statistical inference about the properties of the subpopulations given only observations on the global population without subpopulation identity information. Some mixture model approaches can be regarded as clustering procedueres as they assign individual observations to sub-populations</td>
+<td> </td>
+</tr>
+<tr>
+<td>Morphemes</td>
+<td>Smallest meaningful grammatical/morphological units that cannot be further divided e.g. “come”, “-ing”, and “in” forming “incoming”. It is not a word or may or may not stand by itself.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Multi-hop attention</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Multi-modal tasks</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Multi-modal tasks</td>
+<td>Tasks which utilize multiple data types e.g. images and text. In the task of providing answers from images (visual question answering), given an image, the model provides a description or answer. E.g. given an image of horses and a textual question “how many horses are there?”, the expected answer would be the number of horses in the image.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Natural Language Inference / Recognizing Textual Entailment</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Negation</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>NEMO entity linking</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Neural Belief Tracking</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Neural caching model</td>
+<td> </td>
+<td>Grave et al. 2017</td>
+</tr>
+<tr>
+<td>Neural machine translation (NMT)</td>
+<td>[vs. MT]</td>
+<td> </td>
+</tr>
+<tr>
+<td>Neural Turing Machine</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Noise contrastive estimation</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Nominal</td>
+<td>Category that groups nouns and adjectives based on shared properties. Nouns and adjectives share a number of morphological and syntactic properties</td>
+<td> </td>
+</tr>
+<tr>
+<td>Nonce</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Nonce task</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Noun-compound</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Order embeddings</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Perplexity</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Phrase table [induction]</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Pointer Network</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Policy Gradient</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Polysemy</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Possessives</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Pragmatics</td>
+<td>The way context contributes to meaning. Unlike semantics which examines the conventional meaning of a given language, pragmatics indicates how meaning not only depends on structural and linguistic knowledge (Grammar, lexicon etc) but also on: (i) the context of utterance; (ii) any pre-existing knowledge about those involved; (iii) the inferred intent of the speaker etc. Pragmatics explains how language users are able to overcome apparent ambiguity, since meaning relies on the manner, place, time etc of an utterance</td>
+<td> </td>
+</tr>
+<tr>
+<td>Precision / false positive rate</td>
+<td>Metric used to indicate ratio of true positive mentions to all detected mentions. Indicates how many false positives a system detects. Calculated as TP/(TP+FP)</td>
+<td> </td>
+</tr>
+<tr>
+<td>Predicate</td>
+<td>In logic, a predicate is a Boolean-valued function of X i.e. predicate on X. A predicate is therefore a statement that may be true or false depending on the values of its variables. It is a function that outputs true/false based on input. In other words – something which is affirmed or denied concerning an argument of a proposition.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Prepositions</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Pre-supposition</td>
+<td>Implicit assumption relating to an utterance whose truth is taken for granted. E.g. “Jane no longer writes fiction” – presupposition is that Jane once wrote fiction. “Have you stopped eating meat?” – presupposition is that you had previously eaten meat. “Have you talked to Hans?” – presupposition is that Hans exists and you know him</td>
+<td> </td>
+</tr>
+<tr>
+<td>Probabilistic graphical models</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Propositions</td>
+<td>A particular kind of sentence – one which affirms or denise a predicate of a subject. E.g. “snow is white” – affirms the “white” of the subject “snow”</td>
+<td> </td>
+</tr>
+<tr>
+<td>PU learning</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Reasoning</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Recall / true positive rate / sensitivity</td>
+<td>Metric used to indicate the ratio of the true mentions detected and all true mentions. Calculated as TP / (TP+FN)</td>
+<td> </td>
+</tr>
+<tr>
+<td>Recurrent neural tensor networks</td>
+<td>Unlike RNNs which require increasing size of the hidden layer for increase capacity, RNTN use distinct hidden layer weights for each word</td>
+<td> </td>
+</tr>
+<tr>
+<td>Recursive RNN</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Relation vectors</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Relational Networks</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Retrofitting</td>
+<td>Semantic specialization of distributional word vectors [often with a lexicon]</td>
+<td> </td>
+</tr>
+<tr>
+<td>Salient/saliency map</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Semantic hashing</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Semantic parsing</td>
+<td>The study of translating natural language utterances into machine-executable programs. Translates natural language into a formal language (vs. machine translation where it translates natural language to another natural language). The choice of formal languages used by semantic parsers is important and recent work has chosen to use standard programming languages instead of more linguistically-motivated representations. AllenNLP provides semantic parsing tools</td>
+<td> </td>
+</tr>
+<tr>
+<td>Semantic representations</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Semantic role labeling (SRL)</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Semantics</td>
+<td>Branch of linguistics and logic concerned with meaning.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Semi-supervised learning</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Slot filling</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Soft template [in summarization]</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Soft vs hard attention</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Statistical machine translation</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>String kernel</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Supposition</td>
+<td>Belief held without proof or knowledge. Open to questioning</td>
+<td> </td>
+</tr>
+<tr>
+<td>Syntactic parsing</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Target-specific transformation</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Task-oriented sentiment classification</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Template-based summarization</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Textual deconvolution saliency</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Transactivity</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Transformer model [in machine translation]</td>
+<td>Model based on attention mechanisms that does not utilize recurrent neural networks or convolutions. Popularly used in translation.</td>
+<td>https://arxiv.org/abs/1706.03762</td>
+</tr>
+<tr>
+<td>Transliteration</td>
+<td>Word for word conversion of the characters, but not necessarily the sound. Transcription notes the sounds but not necessarily the spelling. Therefore, translationation is the mapping of one system of writing into another typically grapheme to grapheme</td>
+<td> </td>
+</tr>
+<tr>
+<td>Tree-structure LSTM</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Turn-taking</td>
+<td>A task in dialogue systems that determines whose turn is it to ‘say’ something in a conversation, based on the principle of taking turns during a conversation.</td>
+<td>http://www.anthology.aclweb.org/N/N09/N09-1071.pdf</td>
+</tr>
+<tr>
+<td>Universal dependencies</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Variational Autoencoders (VAE)</td>
+<td>Type of a generative model. As an autoencoder, it encodes input data as vectors creating a hidden representation of the raw data that when paired with a decoder, reconstructs the input. It has an additional constraint when encoding the input data such that the hidden representations are normalized. Similar to GAN, is able to encode and generate data but images tend to be blurred compared to GANs.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Variational Inference</td>
+<td>Used to train deep generative models</td>
+<td> </td>
+</tr>
+<tr>
+<td>VQA: visual question answering</td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
+  </table>
+  
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>
